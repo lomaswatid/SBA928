@@ -1,0 +1,415 @@
+{
+  "data_provenance": {
+    "manifest_sha256": "de162666dd03487c31aea0a22821c7944c48a43fd1b3abbabd9baac71167207b",
+    "record_count": 3,
+    "record_ids": [
+      "FT-UCI468-v1-test-region-extrema-ea08c5ab0b78cf8e",
+      "FT-UCI468-v1-test-special-day-ea08c5ab0b78cf8e",
+      "FT-UCI468-v1-test-weekend-comparison-ea08c5ab0b78cf8e"
+    ],
+    "source_sha256": "a4423a5b6e43d3a523b2a9f6bb7e164c461e518bfe973ac0e058454cf4a29da0",
+    "split": "test",
+    "test_sha256": "1e70544abcace553081453b6de673b8f7949afea044bb82f5bb63e989849c6ca",
+    "validation_passed": true
+  },
+  "device": "cpu",
+  "effective_generation_settings": {
+    "_from_model_config": null,
+    "assistant_confidence_threshold": null,
+    "assistant_early_exit": null,
+    "assistant_ensemble_weight": null,
+    "assistant_lookbehind": null,
+    "bad_words_ids": null,
+    "begin_suppress_tokens": null,
+    "bos_token_id": null,
+    "cache_config": null,
+    "cache_implementation": null,
+    "compile_config": null,
+    "constraints": null,
+    "continuous_batching_config": null,
+    "decoder_start_token_id": 0,
+    "disable_compile": null,
+    "diversity_penalty": null,
+    "do_sample": false,
+    "dola_layers": null,
+    "early_stopping": null,
+    "encoder_no_repeat_ngram_size": null,
+    "encoder_repetition_penalty": null,
+    "eos_token_id": 1,
+    "epsilon_cutoff": null,
+    "eta_cutoff": null,
+    "exponential_decay_length_penalty": null,
+    "force_words_ids": null,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "guidance_scale": null,
+    "is_assistant": null,
+    "length_penalty": null,
+    "low_memory": null,
+    "max_cache_len": null,
+    "max_length": 181,
+    "max_matching_ngram_size": null,
+    "max_new_tokens": 180,
+    "max_time": null,
+    "min_length": null,
+    "min_new_tokens": null,
+    "min_p": null,
+    "no_repeat_ngram_size": null,
+    "num_assistant_tokens": null,
+    "num_assistant_tokens_schedule": null,
+    "num_beam_groups": null,
+    "num_beams": 2,
+    "num_return_sequences": null,
+    "output_attentions": null,
+    "output_hidden_states": null,
+    "output_logits": null,
+    "output_scores": null,
+    "pad_token_id": 0,
+    "penalty_alpha": null,
+    "prefill_chunk_size": null,
+    "prompt_lookup_num_tokens": null,
+    "remove_invalid_values": null,
+    "renormalize_logits": null,
+    "repetition_penalty": null,
+    "return_dict_in_generate": null,
+    "sequence_bias": null,
+    "speculation_type": null,
+    "stop_strings": null,
+    "suppress_tokens": null,
+    "target_lookbehind": null,
+    "temperature": null,
+    "token_healing": null,
+    "top_h": null,
+    "top_k": null,
+    "top_p": null,
+    "transformers_version": "5.18.0",
+    "typical_p": null,
+    "use_cache": false,
+    "use_mtp": null,
+    "watermarking_config": null
+  },
+  "embedding_weight_tying_limitation": "Known embedding weight-tying inconsistency: the saved fine-tuned configuration declares tie_word_embeddings=True, while saved embedding tying is inconsistent. Standard model loading may reconcile aliases; loader warnings must be retained. No manual weight repair, tie_weights call, or model configuration change is made.",
+  "evaluation_limitation": "Only three held-out records in the current manifest; limited-sample evaluation.",
+  "final_comparison_authorized": true,
+  "generation_length_semantics": "180 new tokens plus one T5 decoder-start token; total cap 181",
+  "human_review": {
+    "aggregation": "Unweighted arithmetic means calculated from individual scores; N/A excluded. Overall uses the four applicable dimensions.",
+    "approval": "User approved these individual scores and reviewer rationales.",
+    "conclusion": "The original performs somewhat better on these three cases, principally through its partially accurate regional figures. Both models fail to complete every requested task. This small comparison provides no evidence of improvement from fine-tuning; it does not establish general performance, especially given the documented embedding weight-tying inconsistency.",
+    "per_model_averages": {
+      "fine_tuned": {
+        "completeness": 1.0,
+        "format_adherence": "N/A",
+        "grounding": 1.0,
+        "overall": 1.25,
+        "relevance": 2.0,
+        "specificity": 1.0
+      },
+      "original": {
+        "completeness": 1.3333333333333333,
+        "format_adherence": "N/A",
+        "grounding": 1.6666666666666667,
+        "overall": 1.8333333333333333,
+        "relevance": 2.3333333333333335,
+        "specificity": 2.0
+      }
+    },
+    "responses": [
+      {
+        "case": "region-extrema",
+        "model": "original",
+        "overall_score": 2.75,
+        "record_id": "FT-UCI468-v1-test-region-extrema-ea08c5ab0b78cf8e",
+        "reviewer_rationale": "Copies most supplied figures correctly, but changes Region 4's conversion rate from 12.8% to 14.4%, duplicating Region 3's rate. It never applies the >=100-session eligibility rule or identifies eligible Region 1 as highest and Region 4 as lowest. It invents no geographic labels, but omits the reference's explicit coded-region caveat. The requested analysis is incomplete.",
+        "scores": {
+          "completeness": 2,
+          "format_adherence": "N/A",
+          "grounding": 3,
+          "relevance": 3,
+          "specificity": 3
+        }
+      },
+      {
+        "case": "region-extrema",
+        "model": "fine_tuned",
+        "overall_score": 1.25,
+        "record_id": "FT-UCI468-v1-test-region-extrema-ea08c5ab0b78cf8e",
+        "reviewer_rationale": "Restates the instruction without analyzing any region, reporting figures, applying eligibility, or identifying extrema. No invented location or numerical claim appears, but no evidence-based answer appears either. The task is not completed.",
+        "scores": {
+          "completeness": 1,
+          "format_adherence": "N/A",
+          "grounding": 1,
+          "relevance": 2,
+          "specificity": 1
+        }
+      },
+      {
+        "case": "special-day",
+        "model": "original",
+        "overall_score": 1.25,
+        "record_id": "FT-UCI468-v1-test-special-day-ea08c5ab0b78cf8e",
+        "reviewer_rationale": "Answers only \"False.\" Read as an answer to the instruction, this denies an apparent association without justification. The context shows 5.8% across 121 near-special-day sessions versus 16.5% across 1,112 other sessions, a descriptive negative association. The response supplies neither that comparison nor the distinction between association and causation. \"False\" could also be a copied group label, but then it provides no answer. The task is not completed.",
+        "scores": {
+          "completeness": 1,
+          "format_adherence": "N/A",
+          "grounding": 1,
+          "relevance": 2,
+          "specificity": 1
+        }
+      },
+      {
+        "case": "special-day",
+        "model": "fine_tuned",
+        "overall_score": 1.25,
+        "record_id": "FT-UCI468-v1-test-special-day-ea08c5ab0b78cf8e",
+        "reviewer_rationale": "Answers only \"False.\" Read as an answer to the instruction, this denies an apparent association without justification. The context shows 5.8% across 121 near-special-day sessions versus 16.5% across 1,112 other sessions, a descriptive negative association. The response supplies neither that comparison nor the distinction between association and causation. \"False\" could also be a copied group label, but then it provides no answer. The task is not completed.",
+        "scores": {
+          "completeness": 1,
+          "format_adherence": "N/A",
+          "grounding": 1,
+          "relevance": 2,
+          "specificity": 1
+        }
+      },
+      {
+        "case": "weekend-comparison",
+        "model": "original",
+        "overall_score": 1.5,
+        "record_id": "FT-UCI468-v1-test-weekend-comparison-ea08c5ab0b78cf8e",
+        "reviewer_rationale": "Calls 954 a \"purchase rate,\" although it is the non-weekend session count. The opening \"False\" corresponds to non-weekend sessions, while 19.0% belongs to weekend sessions, creating ambiguous or incorrect group attribution. It omits the weekday rate of 14.5%, the weekend count of 279, and the requested proposed test. The task is not completed.",
+        "scores": {
+          "completeness": 1,
+          "format_adherence": "N/A",
+          "grounding": 1,
+          "relevance": 2,
+          "specificity": 2
+        }
+      },
+      {
+        "case": "weekend-comparison",
+        "model": "fine_tuned",
+        "overall_score": 1.25,
+        "record_id": "FT-UCI468-v1-test-weekend-comparison-ea08c5ab0b78cf8e",
+        "reviewer_rationale": "Introduces an unsupported \"sessions per session\" interpretation and repeatedly recycles that phrase. Although 954 appears in the context, the response gives it the wrong meaning. It supplies neither group's conversion comparison nor an A/B test proposal. The repetition overwhelms the answer. The task is not completed.",
+        "scores": {
+          "completeness": 1,
+          "format_adherence": "N/A",
+          "grounding": 1,
+          "relevance": 2,
+          "specificity": 1
+        }
+      }
+    ],
+    "rubric": {
+      "format_adherence": "N/A for all three cases because no particular output format was requested.",
+      "grounding": "Requires supported analysis; merely avoiding invented facts does not earn a high score.",
+      "scale": "1 = inadequate; 3 = partially meets the criterion; 5 = fully meets it."
+    },
+    "scored_response_count": 6
+  },
+  "human_review_status": "approved scores and reviewer rationales recorded; six responses reviewed",
+  "input_format": "instruction + \"\\n\\nContext:\\n\" + context",
+  "library_versions": {
+    "torch": "2.14.1",
+    "transformers": "5.18.0"
+  },
+  "metric_limitation": "Token-F1 measures lexical overlap only and is supplemental, not a factual-grounding score. Human review is required; no improvement claim follows from token-F1 alone.",
+  "model_configurations": {
+    "fine_tuned": {
+      "_name_or_path": ".\\artifacts\\models\\flan-t5-sba-928\\final",
+      "architectures": [
+        "T5ForConditionalGeneration"
+      ],
+      "chunk_size_feed_forward": 0,
+      "classifier_dropout": 0.0,
+      "d_ff": 1024,
+      "d_kv": 64,
+      "d_model": 512,
+      "decoder_start_token_id": 0,
+      "dense_act_fn": "gelu_new",
+      "dropout_rate": 0.1,
+      "dtype": "float32",
+      "eos_token_id": 1,
+      "feed_forward_proj": "gated-gelu",
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "initializer_factor": 1.0,
+      "is_decoder": false,
+      "is_encoder_decoder": true,
+      "is_gated_act": true,
+      "label2id": {
+        "LABEL_0": 0,
+        "LABEL_1": 1
+      },
+      "layer_norm_epsilon": 1e-06,
+      "model_type": "t5",
+      "n_positions": 512,
+      "num_decoder_layers": 8,
+      "num_heads": 6,
+      "num_layers": 8,
+      "output_attentions": false,
+      "output_hidden_states": false,
+      "output_past": true,
+      "pad_token_id": 0,
+      "problem_type": null,
+      "relative_attention_max_distance": 128,
+      "relative_attention_num_buckets": 32,
+      "return_dict": true,
+      "scale_decoder_outputs": false,
+      "task_specific_params": {
+        "summarization": {
+          "early_stopping": true,
+          "length_penalty": 2.0,
+          "max_length": 200,
+          "min_length": 30,
+          "no_repeat_ngram_size": 3,
+          "num_beams": 4,
+          "prefix": "summarize: "
+        },
+        "translation_en_to_de": {
+          "early_stopping": true,
+          "max_length": 300,
+          "num_beams": 4,
+          "prefix": "translate English to German: "
+        },
+        "translation_en_to_fr": {
+          "early_stopping": true,
+          "max_length": 300,
+          "num_beams": 4,
+          "prefix": "translate English to French: "
+        },
+        "translation_en_to_ro": {
+          "early_stopping": true,
+          "max_length": 300,
+          "num_beams": 4,
+          "prefix": "translate English to Romanian: "
+        }
+      },
+      "tie_word_embeddings": true,
+      "transformers_version": "5.18.0",
+      "use_cache": false,
+      "vocab_size": 32128
+    },
+    "original": {
+      "_name_or_path": "google/flan-t5-small",
+      "architectures": [
+        "T5ForConditionalGeneration"
+      ],
+      "chunk_size_feed_forward": 0,
+      "classifier_dropout": 0.0,
+      "d_ff": 1024,
+      "d_kv": 64,
+      "d_model": 512,
+      "decoder_start_token_id": 0,
+      "dense_act_fn": "gelu_new",
+      "dropout_rate": 0.1,
+      "dtype": "float32",
+      "eos_token_id": 1,
+      "feed_forward_proj": "gated-gelu",
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "initializer_factor": 1.0,
+      "is_decoder": false,
+      "is_encoder_decoder": true,
+      "is_gated_act": true,
+      "label2id": {
+        "LABEL_0": 0,
+        "LABEL_1": 1
+      },
+      "layer_norm_epsilon": 1e-06,
+      "model_type": "t5",
+      "n_positions": 512,
+      "num_decoder_layers": 8,
+      "num_heads": 6,
+      "num_layers": 8,
+      "output_attentions": false,
+      "output_hidden_states": false,
+      "output_past": true,
+      "pad_token_id": 0,
+      "problem_type": null,
+      "relative_attention_max_distance": 128,
+      "relative_attention_num_buckets": 32,
+      "return_dict": true,
+      "scale_decoder_outputs": false,
+      "task_specific_params": {
+        "summarization": {
+          "early_stopping": true,
+          "length_penalty": 2.0,
+          "max_length": 200,
+          "min_length": 30,
+          "no_repeat_ngram_size": 3,
+          "num_beams": 4,
+          "prefix": "summarize: "
+        },
+        "translation_en_to_de": {
+          "early_stopping": true,
+          "max_length": 300,
+          "num_beams": 4,
+          "prefix": "translate English to German: "
+        },
+        "translation_en_to_fr": {
+          "early_stopping": true,
+          "max_length": 300,
+          "num_beams": 4,
+          "prefix": "translate English to French: "
+        },
+        "translation_en_to_ro": {
+          "early_stopping": true,
+          "max_length": 300,
+          "num_beams": 4,
+          "prefix": "translate English to Romanian: "
+        }
+      },
+      "tie_word_embeddings": true,
+      "transformers_version": "5.18.0",
+      "use_cache": true,
+      "vocab_size": 32128
+    }
+  },
+  "models": {
+    "fine_tuned": ".\\artifacts\\models\\flan-t5-sba-928\\final",
+    "original": "google/flan-t5-small"
+  },
+  "python_version": "3.10.21",
+  "reproducibility_limitation": "Deterministic decoding and eval mode; bitwise identity across devices and library versions is not guaranteed.",
+  "seed": 42,
+  "supplemental_token_f1": {
+    "fine_tuned": 0.0561710095178655,
+    "original": 0.13583363385022237
+  },
+  "tokenization": {
+    "add_special_tokens": true,
+    "matching_token_ids_and_attention_masks": true,
+    "max_source_tokens": 256,
+    "max_target_tokens": 96,
+    "padding": false,
+    "preflight": [
+      {
+        "attention_masks_match": true,
+        "record_id": "FT-UCI468-v1-test-region-extrema-ea08c5ab0b78cf8e",
+        "source_tokens": 161,
+        "target_tokens": 64,
+        "token_ids_match": true
+      },
+      {
+        "attention_masks_match": true,
+        "record_id": "FT-UCI468-v1-test-special-day-ea08c5ab0b78cf8e",
+        "source_tokens": 66,
+        "target_tokens": 59,
+        "token_ids_match": true
+      },
+      {
+        "attention_masks_match": true,
+        "record_id": "FT-UCI468-v1-test-weekend-comparison-ea08c5ab0b78cf8e",
+        "source_tokens": 56,
+        "target_tokens": 56,
+        "token_ids_match": true
+      }
+    ],
+    "truncation": false
+  }
+}

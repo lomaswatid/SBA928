@@ -1,0 +1,68 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Credentials, local assistant/account state, and editor settings
+.env
+.env.*
+!.env.example
+.aws/
+.azure/
+.ssh/
+.codex/
+.agents/
+.vscode/
+credentials*.json
+client_secret*.json
+*service_account*.json
+service-account*.json
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Frozen local experiment archives; public copies are in submission/evidence.
+/artifacts/
+/models/
+/results/
+/prompts/train.jsonl
+/prompts/test.jsonl
+
+# Model, optimizer and serialized training weights
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.pkl
+
+# Private course messages/reference copies are not project deliverables.
+/docs/instructor_requirements.md
+/docs/instructor_clarifications.md
+/docs/sba_928_original_instructions.md
+/docs/docs/
+
+# Temporary and OS files
+*.tmp
+*.temp
+*.bak
+*.log
+*~
+.DS_Store
+Thumbs.db
+/tmp/
+/temp/

@@ -1,0 +1,16 @@
+{
+  "case_count": 16,
+  "device": "cpu",
+  "driver_sha256": "a1a61032fc58b8c964d5fe003e157f71692941bb42631fb85218213dcf179eec",
+  "elapsed_seconds": 49.26673419999861,
+  "held_out_content_accessed": false,
+  "model_and_dataset_hashes_unchanged": true,
+  "models_executed": true,
+  "response_count": 32,
+  "runtime_errors": [],
+  "scenario_count": 15,
+  "scoring_models_executed_flag_scope": "The offline scorer itself executes no models; the controlled inference above did.",
+  "scoring_report": "scoring\\run-d6f73febb7434602ab1ba65654dcdd96\\report.json",
+  "seed": 42,
+  "status": "complete"
+}

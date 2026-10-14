@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "category": "Consumer behavior",
+    "base_prompt": "Analyze customer purchasing behavior in the online shopping dataset.",
+    "specific_prompt": "Compare the browsing behavior of sessions that generated revenue with sessions that did not, focusing on product-related pages, duration, bounce rate, exit rate, and page value.",
+    "role_prompt": "You are a market research analyst for an e-commerce company. Compare purchasing and non-purchasing sessions using engagement and navigation variables, then identify two business implications.",
+    "grounded_prompt": "Using only the supplied dataset statistics, compare purchasing and non-purchasing sessions using product-related pages, product-related duration, bounce rate, exit rate, and page value. Report three findings. Do not infer causes that the dataset cannot establish."
+  },
+  {
+    "id": 2,
+    "category": "Visitor segmentation",
+    "base_prompt": "Compare new and returning visitors.",
+    "specific_prompt": "Compare conversion rates and product-page engagement for New_Visitor and Returning_Visitor sessions.",
+    "role_prompt": "Act as an e-commerce market research analyst. Compare new and returning visitors and explain how the observed differences could inform retention and acquisition strategy.",
+    "grounded_prompt": "Using only the provided visitor-type statistics, compare New_Visitor and Returning_Visitor conversion rates and engagement. Distinguish observed associations from causal explanations."
+  },
+  {
+    "id": 3,
+    "category": "Market trends",
+    "base_prompt": "Identify seasonal purchasing patterns.",
+    "specific_prompt": "Compare monthly session volume and conversion rate to identify high- and low-performing months.",
+    "role_prompt": "You are preparing a seasonal market research brief. Identify the strongest and weakest months by observed conversion rate and discuss possible marketing implications.",
+    "grounded_prompt": "Using only the supplied monthly statistics, identify the highest and lowest observed conversion months. Do not claim seasonality causes conversion differences without additional evidence."
+  },
+  {
+    "id": 4,
+    "category": "Traffic analysis",
+    "base_prompt": "Analyze traffic sources.",
+    "specific_prompt": "Compare conversion rates across traffic types and identify traffic sources with enough sessions to support a meaningful descriptive comparison.",
+    "role_prompt": "Act as a digital marketing analyst. Compare traffic-source performance and identify which sources deserve further investigation for acquisition strategy.",
+    "grounded_prompt": "Using only supplied traffic-type session counts and conversion rates, identify notable traffic-source differences. Flag small samples and avoid claiming that traffic source caused the observed conversion rate."
+  },
+  {
+    "id": 5,
+    "category": "Engagement",
+    "base_prompt": "Analyze bounce rate and purchasing.",
+    "specific_prompt": "Compare average BounceRates for purchasing and non-purchasing sessions.",
+    "role_prompt": "You are evaluating website engagement. Explain how bounce rate differs between sessions that generated revenue and those that did not, and give one testable business hypothesis.",
+    "grounded_prompt": "Use only the supplied average bounce-rate statistics. Describe the association between bounce rate and Revenue, but do not state that bounce rate causes purchases or non-purchases."
+  },
+  {
+    "id": 6,
+    "category": "Engagement",
+    "base_prompt": "Analyze exit rate and purchasing.",
+    "specific_prompt": "Compare average ExitRates for purchasing and non-purchasing sessions.",
+    "role_prompt": "Act as a conversion analyst. Compare exit behavior between purchasing and non-purchasing sessions and identify a follow-up analysis the company should perform.",
+    "grounded_prompt": "Using only the supplied ExitRates statistics, describe differences between revenue outcomes. Treat the result as descriptive, not causal."
+  },
+  {
+    "id": 7,
+    "category": "Timing",
+    "base_prompt": "Compare weekend and weekday shoppers.",
+    "specific_prompt": "Compare session counts and conversion rates between weekend and non-weekend sessions.",
+    "role_prompt": "You are planning campaign timing. Compare weekend and weekday conversion behavior and explain how the result could guide an A/B test.",
+    "grounded_prompt": "Using only the supplied weekend statistics, compare observed conversion rates. Do not recommend reallocating budget solely from this descriptive comparison."
+  },
+  {
+    "id": 8,
+    "category": "Technology",
+    "base_prompt": "Analyze browser purchasing patterns.",
+    "specific_prompt": "Compare browser categories by session count and conversion rate, while accounting for small sample sizes.",
+    "role_prompt": "Act as a digital experience analyst. Identify browser groups that may deserve usability testing based on session volume and observed conversion.",
+    "grounded_prompt": "Use only supplied browser counts and conversion rates. Flag small groups and do not infer user demographics from browser choice."
+  },
+  {
+    "id": 9,
+    "category": "Regional analysis",
+    "base_prompt": "Analyze regional purchasing patterns.",
+    "specific_prompt": "Compare available Region categories by session count and conversion rate.",
+    "role_prompt": "Act as a market research analyst. Compare the coded Region groups and identify where further localized research may be justified.",
+    "grounded_prompt": "Use only the supplied Region codes, session counts, and conversion rates. Do not convert region codes into geographic locations unless the dataset explicitly provides that mapping."
+  },
+  {
+    "id": 10,
+    "category": "Purchase intention",
+    "base_prompt": "Analyze page value and purchase intention.",
+    "specific_prompt": "Compare average PageValues between purchasing and non-purchasing sessions.",
+    "role_prompt": "Act as an e-commerce analyst. Explain how PageValues differs by Revenue outcome and why it may be useful for conversion analysis.",
+    "grounded_prompt": "Use only the supplied PageValues statistics. Describe association rather than claiming PageValues causes a purchase."
+  },
+  {
+    "id": 11,
+    "category": "Marketing strategy",
+    "base_prompt": "Suggest ways to improve conversion.",
+    "specific_prompt": "Based on observed engagement, visitor, timing, and traffic patterns, identify three areas that should be tested to improve conversion.",
+    "role_prompt": "You are a market research analyst advising an e-commerce manager. Turn the supplied descriptive findings into three testable marketing or UX experiments.",
+    "grounded_prompt": "Using only the supplied dataset findings, propose three experiments. Label each recommendation as a hypothesis to test, not a proven causal strategy."
+  },
+  {
+    "id": 12,
+    "category": "Competitive implications",
+    "base_prompt": "Identify competitive insights from the dataset.",
+    "specific_prompt": "Identify customer-experience capabilities an online retailer may need to strengthen based on the observed consumer behavior.",
+    "role_prompt": "Act as a market intelligence analyst. Translate the observed shopping-behavior patterns into capabilities an e-commerce retailer should investigate to remain competitive.",
+    "grounded_prompt": "Using only the supplied consumer-behavior findings, identify competitive implications. Do not rank or name competitors because the dataset contains no competitor-company performance data."
+  }
+]

@@ -1,0 +1,407 @@
+{
+  "model_name": "google/flan-t5-small",
+  "model_revision": null,
+  "generation_settings": {
+    "max_new_tokens": 180,
+    "do_sample": false,
+    "num_beams": 2
+  },
+  "effective_generation_configuration": {
+    "max_length": null,
+    "max_new_tokens": 180,
+    "min_length": null,
+    "min_new_tokens": null,
+    "early_stopping": null,
+    "max_time": null,
+    "stop_strings": null,
+    "do_sample": false,
+    "num_beams": 2,
+    "use_mtp": null,
+    "use_cache": null,
+    "cache_implementation": null,
+    "cache_config": null,
+    "max_cache_len": null,
+    "temperature": null,
+    "top_k": null,
+    "top_p": null,
+    "min_p": null,
+    "top_h": null,
+    "typical_p": null,
+    "epsilon_cutoff": null,
+    "eta_cutoff": null,
+    "repetition_penalty": null,
+    "encoder_repetition_penalty": null,
+    "length_penalty": null,
+    "no_repeat_ngram_size": null,
+    "bad_words_ids": null,
+    "renormalize_logits": null,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": null,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "sequence_bias": null,
+    "token_healing": null,
+    "guidance_scale": null,
+    "watermarking_config": null,
+    "num_return_sequences": null,
+    "output_attentions": null,
+    "output_hidden_states": null,
+    "output_scores": null,
+    "output_logits": null,
+    "return_dict_in_generate": null,
+    "pad_token_id": 0,
+    "bos_token_id": null,
+    "eos_token_id": 1,
+    "encoder_no_repeat_ngram_size": null,
+    "decoder_start_token_id": 0,
+    "is_assistant": null,
+    "num_assistant_tokens": null,
+    "num_assistant_tokens_schedule": null,
+    "assistant_confidence_threshold": null,
+    "prompt_lookup_num_tokens": null,
+    "max_matching_ngram_size": null,
+    "assistant_early_exit": null,
+    "assistant_lookbehind": null,
+    "target_lookbehind": null,
+    "assistant_ensemble_weight": null,
+    "speculation_type": null,
+    "compile_config": null,
+    "disable_compile": null,
+    "continuous_batching_config": null,
+    "low_memory": null,
+    "penalty_alpha": null,
+    "dola_layers": null,
+    "diversity_penalty": null,
+    "num_beam_groups": null,
+    "constraints": null,
+    "force_words_ids": null,
+    "prefill_chunk_size": null,
+    "_from_model_config": true,
+    "transformers_version": "5.18.0"
+  },
+  "device": "cpu",
+  "python_version": "3.10.21",
+  "library_versions": {
+    "torch": "2.14.1",
+    "transformers": "5.18.0",
+    "pandas": "2.3.3"
+  },
+  "case_count": 12,
+  "variant_count": 4,
+  "response_count": 48,
+  "input_token_limit": 512,
+  "input_token_counts": [
+    {
+      "example_id": "PE-UCI468-001",
+      "variant_name": "basic",
+      "count": 213
+    },
+    {
+      "example_id": "PE-UCI468-001",
+      "variant_name": "specific",
+      "count": 236
+    },
+    {
+      "example_id": "PE-UCI468-001",
+      "variant_name": "role + context",
+      "count": 236
+    },
+    {
+      "example_id": "PE-UCI468-001",
+      "variant_name": "grounded + constrained",
+      "count": 253
+    },
+    {
+      "example_id": "PE-UCI468-002",
+      "variant_name": "basic",
+      "count": 215
+    },
+    {
+      "example_id": "PE-UCI468-002",
+      "variant_name": "specific",
+      "count": 234
+    },
+    {
+      "example_id": "PE-UCI468-002",
+      "variant_name": "role + context",
+      "count": 238
+    },
+    {
+      "example_id": "PE-UCI468-002",
+      "variant_name": "grounded + constrained",
+      "count": 250
+    },
+    {
+      "example_id": "PE-UCI468-003",
+      "variant_name": "basic",
+      "count": 265
+    },
+    {
+      "example_id": "PE-UCI468-003",
+      "variant_name": "specific",
+      "count": 276
+    },
+    {
+      "example_id": "PE-UCI468-003",
+      "variant_name": "role + context",
+      "count": 288
+    },
+    {
+      "example_id": "PE-UCI468-003",
+      "variant_name": "grounded + constrained",
+      "count": 288
+    },
+    {
+      "example_id": "PE-UCI468-004",
+      "variant_name": "basic",
+      "count": 229
+    },
+    {
+      "example_id": "PE-UCI468-004",
+      "variant_name": "specific",
+      "count": 244
+    },
+    {
+      "example_id": "PE-UCI468-004",
+      "variant_name": "role + context",
+      "count": 247
+    },
+    {
+      "example_id": "PE-UCI468-004",
+      "variant_name": "grounded + constrained",
+      "count": 259
+    },
+    {
+      "example_id": "PE-UCI468-005",
+      "variant_name": "basic",
+      "count": 102
+    },
+    {
+      "example_id": "PE-UCI468-005",
+      "variant_name": "specific",
+      "count": 109
+    },
+    {
+      "example_id": "PE-UCI468-005",
+      "variant_name": "role + context",
+      "count": 126
+    },
+    {
+      "example_id": "PE-UCI468-005",
+      "variant_name": "grounded + constrained",
+      "count": 129
+    },
+    {
+      "example_id": "PE-UCI468-006",
+      "variant_name": "basic",
+      "count": 102
+    },
+    {
+      "example_id": "PE-UCI468-006",
+      "variant_name": "specific",
+      "count": 109
+    },
+    {
+      "example_id": "PE-UCI468-006",
+      "variant_name": "role + context",
+      "count": 125
+    },
+    {
+      "example_id": "PE-UCI468-006",
+      "variant_name": "grounded + constrained",
+      "count": 120
+    },
+    {
+      "example_id": "PE-UCI468-007",
+      "variant_name": "basic",
+      "count": 91
+    },
+    {
+      "example_id": "PE-UCI468-007",
+      "variant_name": "specific",
+      "count": 99
+    },
+    {
+      "example_id": "PE-UCI468-007",
+      "variant_name": "role + context",
+      "count": 110
+    },
+    {
+      "example_id": "PE-UCI468-007",
+      "variant_name": "grounded + constrained",
+      "count": 110
+    },
+    {
+      "example_id": "PE-UCI468-008",
+      "variant_name": "basic",
+      "count": 352
+    },
+    {
+      "example_id": "PE-UCI468-008",
+      "variant_name": "specific",
+      "count": 362
+    },
+    {
+      "example_id": "PE-UCI468-008",
+      "variant_name": "role + context",
+      "count": 372
+    },
+    {
+      "example_id": "PE-UCI468-008",
+      "variant_name": "grounded + constrained",
+      "count": 369
+    },
+    {
+      "example_id": "PE-UCI468-009",
+      "variant_name": "basic",
+      "count": 272
+    },
+    {
+      "example_id": "PE-UCI468-009",
+      "variant_name": "specific",
+      "count": 276
+    },
+    {
+      "example_id": "PE-UCI468-009",
+      "variant_name": "role + context",
+      "count": 290
+    },
+    {
+      "example_id": "PE-UCI468-009",
+      "variant_name": "grounded + constrained",
+      "count": 296
+    },
+    {
+      "example_id": "PE-UCI468-010",
+      "variant_name": "basic",
+      "count": 94
+    },
+    {
+      "example_id": "PE-UCI468-010",
+      "variant_name": "specific",
+      "count": 101
+    },
+    {
+      "example_id": "PE-UCI468-010",
+      "variant_name": "role + context",
+      "count": 116
+    },
+    {
+      "example_id": "PE-UCI468-010",
+      "variant_name": "grounded + constrained",
+      "count": 113
+    },
+    {
+      "example_id": "PE-UCI468-011",
+      "variant_name": "basic",
+      "count": 384
+    },
+    {
+      "example_id": "PE-UCI468-011",
+      "variant_name": "specific",
+      "count": 400
+    },
+    {
+      "example_id": "PE-UCI468-011",
+      "variant_name": "role + context",
+      "count": 407
+    },
+    {
+      "example_id": "PE-UCI468-011",
+      "variant_name": "grounded + constrained",
+      "count": 405
+    },
+    {
+      "example_id": "PE-UCI468-012",
+      "variant_name": "basic",
+      "count": 386
+    },
+    {
+      "example_id": "PE-UCI468-012",
+      "variant_name": "specific",
+      "count": 399
+    },
+    {
+      "example_id": "PE-UCI468-012",
+      "variant_name": "role + context",
+      "count": 411
+    },
+    {
+      "example_id": "PE-UCI468-012",
+      "variant_name": "grounded + constrained",
+      "count": 412
+    }
+  ],
+  "source_file": "data/online_shoppers_intention.csv",
+  "source_sha256": "a4423a5b6e43d3a523b2a9f6bb7e164c461e518bfe973ac0e058454cf4a29da0",
+  "source_row_count": 12330,
+  "catalog_sha256": "4672608ccbbc7da28ad5a7ddd8dc21e8324e5ff4ec6c4f7149254a5081d19661",
+  "evaluation_rubric": {
+    "relevance": "Answers the topic and requested task.",
+    "completeness": "Covers the shared core expected facts for the case.",
+    "grounding": "Claims match context; proposals are distinguished from findings.",
+    "specificity": "Uses concrete groups, metrics, and relevant details.",
+    "format_adherence": "Follows variant-specific output constraints; use N/A if absent."
+  },
+  "evaluation_scale": "1 = essentially fails; 2 = substantial problems; 3 = partially successful with meaningful omissions/errors; 4 = mostly successful with minor problems; 5 = fully satisfies criterion. Format adherence is N/A when no explicit output format was requested.",
+  "human_evaluation_status": "evaluated; user-approved human-review scores",
+  "evaluated_response_count": 48,
+  "evaluation_summary": {
+    "by_variant": {
+      "basic": {
+        "evaluated_response_count": 12,
+        "averages": {
+          "relevance": 2.17,
+          "completeness": 1.33,
+          "grounding": 3.83,
+          "specificity": 2.58,
+          "format_adherence": null
+        },
+        "applicable_format_score_count": 0
+      },
+      "specific": {
+        "evaluated_response_count": 12,
+        "averages": {
+          "relevance": 2.08,
+          "completeness": 1.25,
+          "grounding": 3.75,
+          "specificity": 2.08,
+          "format_adherence": 1.0
+        },
+        "applicable_format_score_count": 1
+      },
+      "role + context": {
+        "evaluated_response_count": 12,
+        "averages": {
+          "relevance": 1.75,
+          "completeness": 1.17,
+          "grounding": 3.17,
+          "specificity": 2.08,
+          "format_adherence": 1.0
+        },
+        "applicable_format_score_count": 3
+      },
+      "grounded + constrained": {
+        "evaluated_response_count": 12,
+        "averages": {
+          "relevance": 2.0,
+          "completeness": 1.25,
+          "grounding": 3.25,
+          "specificity": 2.08,
+          "format_adherence": 1.0
+        },
+        "applicable_format_score_count": 2
+      }
+    },
+    "applicable_format_score_count": 6,
+    "format_comparability_note": "Format averages are not directly comparable because applicability differs by variant. N/A values are excluded from averages.",
+    "grounding_interpretation": "Grounding is separate from task success; correct copied fragments can be grounded but incomplete. Unattributed facts and non-answers receive reduced grounding scores."
+  },
+  "limitations": [
+    "Existing styles vary requested scope as well as wording.",
+    "Cases are prompt-engineering cases, not held-out fine-tuning test data.",
+    "Deterministic decoding does not ensure identical results across hardware/versions."
+  ]
+}

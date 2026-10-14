@@ -1,0 +1,181 @@
+{
+  "artifact_hashes": {
+    "fine_tuned": {
+      "config.json": "f9fee0faefe3e14bbafd01279233764bdeda3d814e55ab0f8931205cc39a4cb2",
+      "generation_config.json": "73a78b5e875c26a4981b79cb3f9eb6f7d5acbe528ee989f879b9df491bb7bce3",
+      "model.safetensors": "df40f62a972c0489eae1be479e237ddffad26c14928de52f0ea775eccd5cf862",
+      "tokenizer.json": "2432e8aa83414a69884a5cbd54a68f528c042d1f30780affbefcbb85091f022e",
+      "tokenizer_config.json": "e2d19c76680ca7d98c29e71ec0f5ebadde6e2914afb84d0746a873e8ef745841"
+    },
+    "original": {
+      "config.json": "439aa0fecf5a5546a1def68b1fc45e538e2c94528ce805378daf091e2bf6e4de",
+      "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+      "model.safetensors": "495fa51e204676f1a857a9fc13c4c89f3f5ba9f480b898cebca02add25e6d749",
+      "special_tokens_map.json": "5c87151ef0f72a99d1f766a4c418bd2a1f90aaa30a8e22fe5eca9641daebb64f",
+      "spiece.model": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+      "tokenizer.json": "fe2ebbbbde2985be723e0ce18217853e4020c5e9d35bd07be2c27ab9d3ead57a",
+      "tokenizer_config.json": "fcde0f79bffda3688119c94330866a8fbf8de20ae65a8c492c9bd47c704655a0"
+    }
+  },
+  "held_out_content_accessed": false,
+  "input_format": "instruction + \"\\n\\nContext:\\n\" + context",
+  "input_limit": 256,
+  "library_versions": {
+    "huggingface_hub": "1.33.0",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "torch": "2.14.1",
+    "transformers": "5.18.0"
+  },
+  "maximum_input_tokens": 87,
+  "model_paths": {
+    "fine_tuned": ".\\artifacts\\models\\flan-t5-sba-928\\final",
+    "original": "<HF_CACHE>\\hub\\models--google--flan-t5-small\\snapshots\\0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+  },
+  "python_version": "3.10.21",
+  "requested_settings": {
+    "do_sample": false,
+    "max_new_tokens": 180,
+    "num_beams": 2,
+    "use_cache": false
+  },
+  "scoring_contract_smoke_passed": true,
+  "seed": 42,
+  "status": "passed",
+  "token_lengths": [
+    {
+      "case_id": "pilot-conversion-01",
+      "input_sha256": "5301343ccaf3de4e0c13449612ba094793cff5e9231876e858d85b6d2b6649e9",
+      "input_tokens": 56,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-conversion-02",
+      "input_sha256": "3d8cdbb1b50470207568ed62701a7e4ca95b82092be13b1465c08ba525dc869e",
+      "input_tokens": 60,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-percentage-01",
+      "input_sha256": "7a3e1e6b7b962e353b20af5406825d0490dbcb974f620f2942f9e92553815cef",
+      "input_tokens": 53,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-percentage-02",
+      "input_sha256": "09babda9d446cdb19f25a5603c03d0ae6ed9cf3bb7bc23199e98e6dea22f6550",
+      "input_tokens": 57,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-region-01",
+      "input_sha256": "9fef8a1a91f6eb2a95788c3b57b81d281bda3406ea2e4c65163a0eb8cb91dd0b",
+      "input_tokens": 87,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-traffic-01",
+      "input_sha256": "b4ade44eabafd1f299a2557c62a6434e251eff6dededb5bab0445faa5b43a610",
+      "input_tokens": 69,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-boolean-01",
+      "input_sha256": "1c155cdce78809fae66c29ddc6a69aa1eab66bfa51a2c026faaa8bdae444b1e6",
+      "input_tokens": 81,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-boolean-02",
+      "input_sha256": "b1119e27965002a573920e3d2a2ba5583ee80887028044bc0c96a2f4b78ab82a",
+      "input_tokens": 86,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-threshold-01",
+      "input_sha256": "141830de6b304e7788c14967f5fc3221d6d90ffb7669248daf84568f0daeff1f",
+      "input_tokens": 69,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-threshold-02",
+      "input_sha256": "bd7beea6cf6e41bd971621be9b82747ff322671249303b2672ade214afaa2b2a",
+      "input_tokens": 66,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-association-01",
+      "input_sha256": "3aa22c1031de27a86518d6978c3921bdcee6c94a5f6ef4429ec1979faa68d38f",
+      "input_tokens": 74,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-association-02",
+      "input_sha256": "7b8240c58d8b012bbf1b3cbcae8c20eb296553c584ec97e29fcc2999f741f9a3",
+      "input_tokens": 76,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-fairness-01",
+      "input_sha256": "c96dd5eb25ccfecebf9a127f090cbadd5b9e13953c6cd7edd5ab151bd374dda3",
+      "input_tokens": 74,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-fairness-02",
+      "input_sha256": "0fc19eeb0515f936928df253c16d95555c0c275ee3eb66db12779c594e36e87f",
+      "input_tokens": 70,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-recommendation-01",
+      "input_sha256": "d6c132321d489163ba59f5124f7678862ad4a15dab43cc515d2dfcc20ba62eb3",
+      "input_tokens": 74,
+      "matching_tokenization": true
+    },
+    {
+      "case_id": "pilot-recommendation-02",
+      "input_sha256": "e8f78f08a27ca3c3162a58ff4d96c3d825b4bc5cddf8d8058c09caf842d3cd73",
+      "input_tokens": 75,
+      "matching_tokenization": true
+    }
+  ],
+  "validation": {
+    "calculation_checks_passed": true,
+    "case_count": 16,
+    "cases_sha256": "594ac852265dd851ed8da4a482e79358eb2c8c1610ddc78a7cdd6c444588cbe9",
+    "duplicate_checks": {
+      "exact_duplicates": [],
+      "intentional_paraphrases": [
+        {
+          "case_ids": [
+            "pilot-recommendation-01",
+            "pilot-recommendation-02"
+          ],
+          "scenario_id": "pilot-layout-test"
+        }
+      ],
+      "near_duplicates": [],
+      "threshold": 0.9
+    },
+    "family_counts": {
+      "association_causation": 2,
+      "bias_fairness": 2,
+      "boolean_groups": 2,
+      "conversion": 2,
+      "percentage_points": 2,
+      "recommendations": 2,
+      "region_traffic": 2,
+      "sample_thresholds": 2
+    },
+    "provenance_counts": {
+      "synthetic": 16
+    },
+    "scenario_count": 15,
+    "source_group_checks_passed": true,
+    "source_manifest_sha256": "de162666dd03487c31aea0a22821c7944c48a43fd1b3abbabd9baac71167207b",
+    "status": "passed",
+    "test_content_screening": "not performed; held-out content is not accessed",
+    "training_reference_count": 0
+  }
+}

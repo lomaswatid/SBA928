@@ -1,0 +1,34 @@
+[project]
+name = "sba-928-market-research-ai"
+version = "0.1.0"
+description = "SBA 928 - Enhancing Market Research with AI Prompt Engineering"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "accelerate>=1.0",
+    "datasets>=4.0,<5",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scikit-learn>=1.4",
+    "sentencepiece>=0.2",
+    "torch>=2.2",
+    "transformers>=5.0,<6",
+    "ucimlrepo>=0.0.7",
+]
+
+[tool.uv]
+package = true
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "sba_928"
+module-root = "src"

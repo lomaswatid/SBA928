@@ -1,0 +1,470 @@
+{
+  "aggregation_unit": "scenario; equally weighted variant means within scenario",
+  "model_summaries": {
+    "fine_tuned": {
+      "mean_length_cap_fraction": 0.0,
+      "mean_repeated_trigram_fraction": 0.02321428571428571,
+      "scenario_count": 15
+    },
+    "original": {
+      "mean_length_cap_fraction": 0.0,
+      "mean_repeated_trigram_fraction": 0.02571428571428571,
+      "scenario_count": 15
+    }
+  },
+  "scenarios": [
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-association-01"
+      ],
+      "family": "association_causation",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.2857142857142857,
+      "scenario_id": "pilot-association-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-association-02"
+      ],
+      "family": "association_causation",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-association-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-boolean-01"
+      ],
+      "family": "boolean_groups",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-boolean-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-boolean-02"
+      ],
+      "family": "boolean_groups",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-boolean-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-conversion-01"
+      ],
+      "family": "conversion",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-conversion-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-conversion-02"
+      ],
+      "family": "conversion",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-conversion-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-fairness-01"
+      ],
+      "family": "bias_fairness",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-fairness-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-fairness-02"
+      ],
+      "family": "bias_fairness",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-fairness-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-recommendation-01",
+        "pilot-recommendation-02"
+      ],
+      "family": "recommendations",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-layout-test",
+      "variant_count": 2
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-percentage-01"
+      ],
+      "family": "percentage_points",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-percentage-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-percentage-02"
+      ],
+      "family": "percentage_points",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.1,
+      "scenario_id": "pilot-percentage-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-region-01"
+      ],
+      "family": "region_traffic",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-region-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-threshold-01"
+      ],
+      "family": "sample_thresholds",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-threshold-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-threshold-02"
+      ],
+      "family": "sample_thresholds",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-threshold-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-traffic-01"
+      ],
+      "family": "region_traffic",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "original",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-traffic-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-association-01"
+      ],
+      "family": "association_causation",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.2857142857142857,
+      "scenario_id": "pilot-association-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-association-02"
+      ],
+      "family": "association_causation",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-association-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-boolean-01"
+      ],
+      "family": "boolean_groups",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-boolean-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-boolean-02"
+      ],
+      "family": "boolean_groups",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-boolean-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-conversion-01"
+      ],
+      "family": "conversion",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-conversion-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-conversion-02"
+      ],
+      "family": "conversion",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-conversion-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-fairness-01"
+      ],
+      "family": "bias_fairness",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-fairness-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-fairness-02"
+      ],
+      "family": "bias_fairness",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-fairness-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-recommendation-01",
+        "pilot-recommendation-02"
+      ],
+      "family": "recommendations",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-layout-test",
+      "variant_count": 2
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-percentage-01"
+      ],
+      "family": "percentage_points",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-percentage-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-percentage-02"
+      ],
+      "family": "percentage_points",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0625,
+      "scenario_id": "pilot-percentage-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-region-01"
+      ],
+      "family": "region_traffic",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-region-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-threshold-01"
+      ],
+      "family": "sample_thresholds",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-threshold-01",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": null,
+      "case_ids": [
+        "pilot-threshold-02"
+      ],
+      "family": "sample_thresholds",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-threshold-02",
+      "variant_count": 1
+    },
+    {
+      "arithmetic_coverage_mean": 0.0,
+      "case_ids": [
+        "pilot-traffic-01"
+      ],
+      "family": "region_traffic",
+      "length_cap_fraction": 0.0,
+      "manual_review_status": "pending",
+      "model_id": "fine_tuned",
+      "numerical_accuracy_on_scored_mean": null,
+      "numerical_coverage_mean": 0.0,
+      "repeated_trigram_fraction_mean": 0.0,
+      "scenario_id": "pilot-traffic-01",
+      "variant_count": 1
+    }
+  ],
+  "unique_scenarios_per_model": 15
+}

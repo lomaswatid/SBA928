@@ -1,0 +1,37 @@
+SBA 928 - Dataset Summary
+================================
+Rows: 12,330
+Columns: 18
+Overall conversion rate: 15.5%
+
+Revenue counts:
+Revenue
+False    10422
+True      1908
+
+Visitor type:
+                   count      mean
+VisitorType                       
+Returning_Visitor  10551  0.139323
+New_Visitor         1694  0.249115
+Other                 85  0.188235
+
+Monthly conversion:
+       count      mean
+Month                 
+Nov     2998  0.253502
+Oct      549  0.209472
+Sep      448  0.191964
+Aug      433  0.175520
+Jul      432  0.152778
+Dec     1727  0.125072
+May     3364  0.108502
+June     288  0.100694
+Mar     1907  0.100682
+Feb      184  0.016304
+
+Average engagement metrics by Revenue:
+         BounceRates  ExitRates  PageValues  ProductRelated  ProductRelated_Duration
+Revenue                                                                             
+False       0.025317   0.047378    1.975998       28.714642              1069.987809
+True        0.005117   0.019555   27.264518       48.210168              1876.209615

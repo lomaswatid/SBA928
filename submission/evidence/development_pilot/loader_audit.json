@@ -1,0 +1,48 @@
+{
+  "fine_tuned": {
+    "checks": {
+      "all_parameters_finite": true,
+      "decoder_shares_embedding": true,
+      "encoder_shares_embedding": true,
+      "head_matches_saved": true,
+      "head_separate_storage": true,
+      "saved_head_separate_values": true,
+      "shared_matches_saved": true
+    },
+    "dimensions": {
+      "d_ff": 1024,
+      "d_kv": 64,
+      "d_model": 512,
+      "num_decoder_layers": 8,
+      "num_heads": 6,
+      "num_layers": 8,
+      "vocab_size": 32128
+    },
+    "dtype": "torch.float32",
+    "effective_tie_word_embeddings": true,
+    "scale_decoder_outputs": false
+  },
+  "original": {
+    "checks": {
+      "all_parameters_finite": true,
+      "decoder_shares_embedding": true,
+      "encoder_shares_embedding": true,
+      "head_matches_saved": true,
+      "head_separate_storage": true,
+      "saved_head_separate_values": true,
+      "shared_matches_saved": true
+    },
+    "dimensions": {
+      "d_ff": 1024,
+      "d_kv": 64,
+      "d_model": 512,
+      "num_decoder_layers": 8,
+      "num_heads": 6,
+      "num_layers": 8,
+      "vocab_size": 32128
+    },
+    "dtype": "torch.float32",
+    "effective_tie_word_embeddings": true,
+    "scale_decoder_outputs": false
+  }
+}

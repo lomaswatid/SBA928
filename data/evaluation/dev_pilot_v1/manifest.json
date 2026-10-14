@@ -1,0 +1,26 @@
+{
+  "case_count": 16,
+  "case_schema_version": "sba928_evaluation_v2",
+  "cases_sha256": "594ac852265dd851ed8da4a482e79358eb2c8c1610ddc78a7cdd6c444588cbe9",
+  "construction": "Hand-authored synthetic scenarios; no model outputs or source rows used.",
+  "family_counts": {
+    "association_causation": 2,
+    "bias_fairness": 2,
+    "boolean_groups": 2,
+    "conversion": 2,
+    "percentage_points": 2,
+    "recommendations": 2,
+    "region_traffic": 2,
+    "sample_thresholds": 2
+  },
+  "limitations": [
+    "Synthetic development pilot, not an independent real-world benchmark.",
+    "Held-out content was not screened; only manifest split metadata is inspected.",
+    "Semantic criteria require human review."
+  ],
+  "scenario_count": 15,
+  "schema_version": "sba928_development_suite_v1",
+  "source_manifest_sha256": "de162666dd03487c31aea0a22821c7944c48a43fd1b3abbabd9baac71167207b",
+  "split": "development_validation",
+  "suite_id": "dev_pilot_v1"
+}

@@ -1,0 +1,9 @@
+# Consistent source/documentation checkout, except hash-bound evidence below.
+* text=auto eol=lf
+*.png binary
+
+# Preserve original bytes across Windows/Linux checkouts. Dataset manifests and
+# the export manifest bind these exact bytes, including their line endings.
+data/** -text
+submission/evidence/** -text
+submission/evidence_manifest.json -text

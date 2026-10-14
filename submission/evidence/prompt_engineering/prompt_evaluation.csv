@@ -1,0 +1,2705 @@
+example_id,catalog_id,category,variant_name,exact_prompt,context,expected_facts,model_response,relevance,completeness,grounding,specificity,format_adherence,evaluation_notes
+PE-UCI468-001,1,Consumer behavior,basic,"Analyze customer purchasing behavior in the online shopping dataset.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}]}",Average product-related page count is 0.00517 - Average bounce rate is 0.00517 - Mean exit rate is 0.019555 - Mean page value is 27.264518,2,1,2,2,N/A,0.00517 is neither the supplied page count nor exact bounce rate.
+PE-UCI468-001,1,Consumer behavior,specific,"Compare the browsing behavior of sessions that generated revenue with sessions that did not, focusing on product-related pages, duration, bounce rate, exit rate, and page value.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}]}","Non-purchasing sessions: - Session count: 10,422 - Mean product-related page count: 28.714642 - Mean product-related duration: 1069.987809 - Mean bounce rate: 0.005117 - Mean exit rate: 0.019555 - Mean page value: 27.264518",3,2,2,3,N/A,"Correct non-purchase count/pages/duration, but remaining metrics mix groups."
+PE-UCI468-001,1,Consumer behavior,role + context,"You are a market research analyst for an e-commerce company. Compare purchasing and non-purchasing sessions using engagement and navigation variables, then identify two business implications.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}]}","Non-purchasing sessions: - Session count: 10,422 - Mean product-related page count: 28.74642 - Mean product-related duration: 1069.987809 - Mean bounce rate: 0.005117 - Mean exit rate: 0.019555 - Mean page value: 27.264518",2,1,1,2,1,28.74642 replaces 28.714642.
+PE-UCI468-001,1,Consumer behavior,grounded + constrained,"Using only the supplied dataset statistics, compare purchasing and non-purchasing sessions using product-related pages, product-related duration, bounce rate, exit rate, and page value. Report three findings. Do not infer causes that the dataset cannot establish.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}]}",Mean product-related page count: 0.019518 - Mean product-related duration: 0.005117 - Mean bounce rate: 0.005117 - Mean exit rate: 0.019555 - Mean page value: 27.264518,3,2,2,2,1,Metric list does not constitute three analytical findings.
+PE-UCI468-002,2,Visitor segmentation,basic,"Compare new and returning visitors.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","{""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115, ""mean_product_pages"": 18.0549, ""mean_product_duration"": 636.393354}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235, ""mean_product_pages"": 12.470588, ""mean_product_duration"": 570.404862}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323, ""mean_product_pages"": 34.082457, ""mean_product_duration"": 1289.42149}]}","Visitor type Returning_Visitor: - Session count: 1,694 - Conversion rate: 0.249115 - Mean product-related page count: 18.0549 - Mean product-related duration: 570.404862 Visitor type Returning_Visitor: - Session count: 1,694 - Conversion rate: 0.139323 - Mean product-related page count: 34.082457 - Mean product-related duration: 1289.42149",3,2,2,3,N/A,Both sections say Returning_Visitor; first mixes New_Visitor and Other facts.
+PE-UCI468-002,2,Visitor segmentation,specific,"Compare conversion rates and product-page engagement for New_Visitor and Returning_Visitor sessions.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","{""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115, ""mean_product_pages"": 18.0549, ""mean_product_duration"": 636.393354}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235, ""mean_product_pages"": 12.470588, ""mean_product_duration"": 570.404862}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323, ""mean_product_pages"": 34.082457, ""mean_product_duration"": 1289.42149}]}","Conversion rates and product-page engagement for New_Visitor and Returning_Visitor sessions. Source facts: Rates are fractions, not percentages. Conversion rate is the fraction of sessions ending in a purchase. The values below are descriptive statistics. Duration units are not specified in the available dataset information.",2,1,5,1,N/A,"Factually safe wording, but essentially no answer."
+PE-UCI468-002,2,Visitor segmentation,role + context,"Act as an e-commerce market research analyst. Compare new and returning visitors and explain how the observed differences could inform retention and acquisition strategy.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","{""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115, ""mean_product_pages"": 18.0549, ""mean_product_duration"": 636.393354}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235, ""mean_product_pages"": 12.470588, ""mean_product_duration"": 570.404862}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323, ""mean_product_pages"": 34.082457, ""mean_product_duration"": 1289.42149}]}",Mean product-related duration: 1289.42149 - Mean product-related duration: 1289.42149,2,1,4,2,N/A,Repeats returning-visitor duration twice.
+PE-UCI468-002,2,Visitor segmentation,grounded + constrained,"Using only the provided visitor-type statistics, compare New_Visitor and Returning_Visitor conversion rates and engagement. Distinguish observed associations from causal explanations.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+- Mean product-related page count: 18.0549
+- Mean product-related duration: 636.393354
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+- Mean product-related page count: 12.470588
+- Mean product-related duration: 570.404862
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+- Mean product-related page count: 34.082457
+- Mean product-related duration: 1289.42149","{""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115, ""mean_product_pages"": 18.0549, ""mean_product_duration"": 636.393354}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235, ""mean_product_pages"": 12.470588, ""mean_product_duration"": 570.404862}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323, ""mean_product_pages"": 34.082457, ""mean_product_duration"": 1289.42149}]}",Conversion rate = 0.24911 - Mean product-related page count = 0.09191 - Mean product-related duration: 59.82457,2,1,1,2,N/A,0.09191 and 59.82457 are unsupported.
+PE-UCI468-003,3,Market trends,basic,"Identify seasonal purchasing patterns.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","{""monthly"": [{""group"": ""Aug"", ""sessions"": 433, ""conversion_rate"": 0.17552}, {""group"": ""Dec"", ""sessions"": 1727, ""conversion_rate"": 0.125072}, {""group"": ""Feb"", ""sessions"": 184, ""conversion_rate"": 0.016304}, {""group"": ""Jul"", ""sessions"": 432, ""conversion_rate"": 0.152778}, {""group"": ""June"", ""sessions"": 288, ""conversion_rate"": 0.100694}, {""group"": ""Mar"", ""sessions"": 1907, ""conversion_rate"": 0.100682}, {""group"": ""May"", ""sessions"": 3364, ""conversion_rate"": 0.108502}, {""group"": ""Nov"", ""sessions"": 2998, ""conversion_rate"": 0.253502}, {""group"": ""Oct"", ""sessions"": 549, ""conversion_rate"": 0.209472}, {""group"": ""Sep"", ""sessions"": 448, ""conversion_rate"": 0.191964}]}",Rates are the fraction of sessions ending in a purchase.,1,1,5,1,N/A,Correct background statement only.
+PE-UCI468-003,3,Market trends,specific,"Compare monthly session volume and conversion rate to identify high- and low-performing months.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","{""monthly"": [{""group"": ""Aug"", ""sessions"": 433, ""conversion_rate"": 0.17552}, {""group"": ""Dec"", ""sessions"": 1727, ""conversion_rate"": 0.125072}, {""group"": ""Feb"", ""sessions"": 184, ""conversion_rate"": 0.016304}, {""group"": ""Jul"", ""sessions"": 432, ""conversion_rate"": 0.152778}, {""group"": ""June"", ""sessions"": 288, ""conversion_rate"": 0.100694}, {""group"": ""Mar"", ""sessions"": 1907, ""conversion_rate"": 0.100682}, {""group"": ""May"", ""sessions"": 3364, ""conversion_rate"": 0.108502}, {""group"": ""Nov"", ""sessions"": 2998, ""conversion_rate"": 0.253502}, {""group"": ""Oct"", ""sessions"": 549, ""conversion_rate"": 0.209472}, {""group"": ""Sep"", ""sessions"": 448, ""conversion_rate"": 0.191964}]}",0.191964,1,1,3,1,N/A,"0.191964 is September's rate, not an identified highest/lowest finding."
+PE-UCI468-003,3,Market trends,role + context,"You are preparing a seasonal market research brief. Identify the strongest and weakest months by observed conversion rate and discuss possible marketing implications.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","{""monthly"": [{""group"": ""Aug"", ""sessions"": 433, ""conversion_rate"": 0.17552}, {""group"": ""Dec"", ""sessions"": 1727, ""conversion_rate"": 0.125072}, {""group"": ""Feb"", ""sessions"": 184, ""conversion_rate"": 0.016304}, {""group"": ""Jul"", ""sessions"": 432, ""conversion_rate"": 0.152778}, {""group"": ""June"", ""sessions"": 288, ""conversion_rate"": 0.100694}, {""group"": ""Mar"", ""sessions"": 1907, ""conversion_rate"": 0.100682}, {""group"": ""May"", ""sessions"": 3364, ""conversion_rate"": 0.108502}, {""group"": ""Nov"", ""sessions"": 2998, ""conversion_rate"": 0.253502}, {""group"": ""Oct"", ""sessions"": 549, ""conversion_rate"": 0.209472}, {""group"": ""Sep"", ""sessions"": 448, ""conversion_rate"": 0.191964}]}",Month,1,1,3,1,N/A,Essentially a non-answer.
+PE-UCI468-003,3,Market trends,grounded + constrained,"Using only the supplied monthly statistics, identify the highest and lowest observed conversion months. Do not claim seasonality causes conversion differences without additional evidence.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Month Aug:
+- Session count: 433
+- Conversion rate: 0.17552
+
+Month Dec:
+- Session count: 1,727
+- Conversion rate: 0.125072
+
+Month Feb:
+- Session count: 184
+- Conversion rate: 0.016304
+
+Month Jul:
+- Session count: 432
+- Conversion rate: 0.152778
+
+Month June:
+- Session count: 288
+- Conversion rate: 0.100694
+
+Month Mar:
+- Session count: 1,907
+- Conversion rate: 0.100682
+
+Month May:
+- Session count: 3,364
+- Conversion rate: 0.108502
+
+Month Nov:
+- Session count: 2,998
+- Conversion rate: 0.253502
+
+Month Oct:
+- Session count: 549
+- Conversion rate: 0.209472
+
+Month Sep:
+- Session count: 448
+- Conversion rate: 0.191964","{""monthly"": [{""group"": ""Aug"", ""sessions"": 433, ""conversion_rate"": 0.17552}, {""group"": ""Dec"", ""sessions"": 1727, ""conversion_rate"": 0.125072}, {""group"": ""Feb"", ""sessions"": 184, ""conversion_rate"": 0.016304}, {""group"": ""Jul"", ""sessions"": 432, ""conversion_rate"": 0.152778}, {""group"": ""June"", ""sessions"": 288, ""conversion_rate"": 0.100694}, {""group"": ""Mar"", ""sessions"": 1907, ""conversion_rate"": 0.100682}, {""group"": ""May"", ""sessions"": 3364, ""conversion_rate"": 0.108502}, {""group"": ""Nov"", ""sessions"": 2998, ""conversion_rate"": 0.253502}, {""group"": ""Oct"", ""sessions"": 549, ""conversion_rate"": 0.209472}, {""group"": ""Sep"", ""sessions"": 448, ""conversion_rate"": 0.191964}]}",lowest,1,1,3,1,N/A,Avoiding causality does not supply the requested findings.
+PE-UCI468-004,4,Traffic analysis,basic,"Analyze traffic sources.
+
+Source facts:
+Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}","1.0 | 2,451 | 0.106895 10.0 | 450 | 0.2 11.0 | 247 | 0.190283 12.0 | 1 | 0.0 13.0 | 738 | 0.058266 14.0 | 13 | 0.153846 15.0 | 38 | 0.0 16.0 | 3 | 0.333333 17.0 | 1 | 0.0 18.0 | 10 | 0.0 19.0 | 17 | 0.058824 2.0 | 3,913 | 0.216458 20.0 | 198 | 0.252525 3.0 | 2,052 | 0.087719 0.0 | 444 | 0.119369 7.0 | 40 | 0.3 8.0 | 343 | 0.276968 9.0 | 42 | 0.095238",3,2,3,4,N/A,Omits codes 4 and 5; changes code 6 to 0.
+PE-UCI468-004,4,Traffic analysis,specific,"Compare conversion rates across traffic types and identify traffic sources with enough sessions to support a meaningful descriptive comparison.
+
+Source facts:
+Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}","Conversion rates for traffic types are 1.0, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5",2,1,1,1,N/A,Conversion fractions cannot be 4.5.
+PE-UCI468-004,4,Traffic analysis,role + context,"Act as a digital marketing analyst. Compare traffic-source performance and identify which sources deserve further investigation for acquisition strategy.
+
+Source facts:
+Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}","1.0 | 2,451 | 0.106895 10.0 | 450 | 0.2 11.0 | 247 | 0.190283 12.0 | 1 | 0.0 13.0 | 738 | 0.058266 14.0 | 13 | 0.153846 15.0 | 38 | 0.0 16.0 | 3 | 0.333333 17.0 | 1 | 0.0 18.0 | 10 | 0.0 19.0 | 17 | 0.058824 2.0 | 3,913 | 0.216458 20.0 | 198 | 0.252525 3.0 | 2,052 | 0.087719 0.0 | 444 | 0.119369 7.0 | 40 | 0.3 8.0 | 343 | 0.276968 9.0 | 42 | 0.095238",3,2,3,4,N/A,Raw copied rows do not identify acquisition opportunities.
+PE-UCI468-004,4,Traffic analysis,grounded + constrained,"Using only supplied traffic-type session counts and conversion rates, identify notable traffic-source differences. Flag small samples and avoid claiming that traffic source caused the observed conversion rate.
+
+Source facts:
+Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Conversion rates are purchase fractions, not percentages. These are descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Traffic code | Session count | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}","1.0 | 2,451 | 0.106895 10.0 | 450 | 0.2 11.0 | 247 | 0.190283 12.0 | 1 | 0.0 13.0 | 738 | 0.058266 14.0 | 13 | 0.153846 15.0 | 38 | 0.0 16.0 | 3 | 0.333333 17.0 | 1 | 0.0 18.0 | 10 | 0.0 19.0 | 17 | 0.058824 2.0 | 3,913 | 0.216458 20.0 | 198 | 0.252525 3.0 | 2,052 | 0.087719 0.0 | 444 | 0.119369 7.0 | 40 | 0.3 8.0 | 343 | 0.276968 9.0 | 42 | 0.095238",3,2,3,4,N/A,"No causal claim, but grounding and analysis remain incomplete."
+PE-UCI468-005,5,Engagement,basic,"Analyze bounce rate and purchasing.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117}]}","Purchasing sessions: - Session count: 1,908 - Mean bounce rate: 0.005117",3,2,5,4,N/A,Correct fragment rather than analysis.
+PE-UCI468-005,5,Engagement,specific,"Compare average BounceRates for purchasing and non-purchasing sessions.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117}]}","Purchasing sessions: - Session count: 1,908 - Mean bounce rate: 0.005117",3,2,5,4,N/A,Missing non-purchase rate 0.025317.
+PE-UCI468-005,5,Engagement,role + context,"You are evaluating website engagement. Explain how bounce rate differs between sessions that generated revenue and those that did not, and give one testable business hypothesis.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117}]}",Converting sessions is a non-purchasing session.,1,1,1,1,1,Converting sessions is a non-purchasing session contradicts context.
+PE-UCI468-005,5,Engagement,grounded + constrained,"Use only the supplied average bounce-rate statistics. Describe the association between bounce rate and Revenue, but do not state that bounce rate causes purchases or non-purchases.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean bounce rate: 0.025317
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean bounce rate: 0.005117","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117}]}",Average bounce rate is 0.00517 .,2,1,2,2,N/A,"Incorrect digit sequence, not ordinary rounding."
+PE-UCI468-006,6,Engagement,basic,"Analyze exit rate and purchasing.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ExitRates"": 0.047378}, {""purchase"": true, ""sessions"": 1908, ""ExitRates"": 0.019555}]}","Purchasing sessions: - Session count: 1,908 - Mean exit rate: 0.019555",3,2,5,4,N/A,Correct purchase-side fragment.
+PE-UCI468-006,6,Engagement,specific,"Compare average ExitRates for purchasing and non-purchasing sessions.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ExitRates"": 0.047378}, {""purchase"": true, ""sessions"": 1908, ""ExitRates"": 0.019555}]}","Purchasing sessions: - Session count: 1,908 - Mean exit rate: 0.019555",3,2,5,4,N/A,No comparison with 0.047378.
+PE-UCI468-006,6,Engagement,role + context,"Act as a conversion analyst. Compare exit behavior between purchasing and non-purchasing sessions and identify a follow-up analysis the company should perform.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ExitRates"": 0.047378}, {""purchase"": true, ""sessions"": 1908, ""ExitRates"": 0.019555}]}","Purchasing sessions: - Session count: 1,908 - Mean exit rate: 0.019555",3,2,5,4,N/A,Does not recommend follow-up analysis.
+PE-UCI468-006,6,Engagement,grounded + constrained,"Using only the supplied ExitRates statistics, describe differences between revenue outcomes. Treat the result as descriptive, not causal.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean exit rate: 0.047378
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean exit rate: 0.019555","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ExitRates"": 0.047378}, {""purchase"": true, ""sessions"": 1908, ""ExitRates"": 0.019555}]}","Purchasing sessions: - Session count: 1,908 - Mean exit rate: 0.019555",3,2,5,4,N/A,Grounded but incomplete.
+PE-UCI468-007,7,Timing,basic,"Compare weekend and weekday shoppers.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","{""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}]}",Conversion rate: 0.173989,2,1,4,2,N/A,Returns only 0.173989.
+PE-UCI468-007,7,Timing,specific,"Compare session counts and conversion rates between weekend and non-weekend sessions.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","{""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}]}",Conversion rate: 0.173989,2,1,4,2,N/A,Omits non-weekend rate 0.148911.
+PE-UCI468-007,7,Timing,role + context,"You are planning campaign timing. Compare weekend and weekday conversion behavior and explain how the result could guide an A/B test.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","{""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}]}",Conversion rate: 0.173989,2,1,4,2,N/A,No campaign-timing interpretation.
+PE-UCI468-007,7,Timing,grounded + constrained,"Using only the supplied weekend statistics, compare observed conversion rates. Do not recommend reallocating budget solely from this descriptive comparison.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+
+Non-weekend sessions:
+- Session count: 9,462
+- Conversion rate: 0.148911
+
+Weekend sessions:
+- Session count: 2,868
+- Conversion rate: 0.173989","{""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}]}",Conversion rate: 0.173989,2,1,4,2,N/A,"No unsupported budget recommendation, but task remains unanswered."
+PE-UCI468-008,8,Technology,basic,"Analyze browser purchasing patterns.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","{""browser"": [{""group"": 1.0, ""sessions"": 2462, ""conversion_rate"": 0.148253}, {""group"": 10.0, ""sessions"": 163, ""conversion_rate"": 0.196319}, {""group"": 11.0, ""sessions"": 6, ""conversion_rate"": 0.166667}, {""group"": 12.0, ""sessions"": 10, ""conversion_rate"": 0.3}, {""group"": 13.0, ""sessions"": 61, ""conversion_rate"": 0.262295}, {""group"": 2.0, ""sessions"": 7961, ""conversion_rate"": 0.153624}, {""group"": 3.0, ""sessions"": 105, ""conversion_rate"": 0.047619}, {""group"": 4.0, ""sessions"": 736, ""conversion_rate"": 0.17663}, {""group"": 5.0, ""sessions"": 467, ""conversion_rate"": 0.184154}, {""group"": 6.0, ""sessions"": 174, ""conversion_rate"": 0.114943}, {""group"": 7.0, ""sessions"": 49, ""conversion_rate"": 0.122449}, {""group"": 8.0, ""sessions"": 135, ""conversion_rate"": 0.155556}, {""group"": 9.0, ""sessions"": 1, ""conversion_rate"": 0.0}]}",Conversion rate: 0.0,2,1,4,2,N/A,No browser identification.
+PE-UCI468-008,8,Technology,specific,"Compare browser categories by session count and conversion rate, while accounting for small sample sizes.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","{""browser"": [{""group"": 1.0, ""sessions"": 2462, ""conversion_rate"": 0.148253}, {""group"": 10.0, ""sessions"": 163, ""conversion_rate"": 0.196319}, {""group"": 11.0, ""sessions"": 6, ""conversion_rate"": 0.166667}, {""group"": 12.0, ""sessions"": 10, ""conversion_rate"": 0.3}, {""group"": 13.0, ""sessions"": 61, ""conversion_rate"": 0.262295}, {""group"": 2.0, ""sessions"": 7961, ""conversion_rate"": 0.153624}, {""group"": 3.0, ""sessions"": 105, ""conversion_rate"": 0.047619}, {""group"": 4.0, ""sessions"": 736, ""conversion_rate"": 0.17663}, {""group"": 5.0, ""sessions"": 467, ""conversion_rate"": 0.184154}, {""group"": 6.0, ""sessions"": 174, ""conversion_rate"": 0.114943}, {""group"": 7.0, ""sessions"": 49, ""conversion_rate"": 0.122449}, {""group"": 8.0, ""sessions"": 135, ""conversion_rate"": 0.155556}, {""group"": 9.0, ""sessions"": 1, ""conversion_rate"": 0.0}]}",Conversion rate: 0.0,2,1,4,2,N/A,Omits browser 9's one-session sample size.
+PE-UCI468-008,8,Technology,role + context,"Act as a digital experience analyst. Identify browser groups that may deserve usability testing based on session volume and observed conversion.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","{""browser"": [{""group"": 1.0, ""sessions"": 2462, ""conversion_rate"": 0.148253}, {""group"": 10.0, ""sessions"": 163, ""conversion_rate"": 0.196319}, {""group"": 11.0, ""sessions"": 6, ""conversion_rate"": 0.166667}, {""group"": 12.0, ""sessions"": 10, ""conversion_rate"": 0.3}, {""group"": 13.0, ""sessions"": 61, ""conversion_rate"": 0.262295}, {""group"": 2.0, ""sessions"": 7961, ""conversion_rate"": 0.153624}, {""group"": 3.0, ""sessions"": 105, ""conversion_rate"": 0.047619}, {""group"": 4.0, ""sessions"": 736, ""conversion_rate"": 0.17663}, {""group"": 5.0, ""sessions"": 467, ""conversion_rate"": 0.184154}, {""group"": 6.0, ""sessions"": 174, ""conversion_rate"": 0.114943}, {""group"": 7.0, ""sessions"": 49, ""conversion_rate"": 0.122449}, {""group"": 8.0, ""sessions"": 135, ""conversion_rate"": 0.155556}, {""group"": 9.0, ""sessions"": 1, ""conversion_rate"": 0.0}]}",0.0,1,1,3,1,N/A,Returns only 0.0.
+PE-UCI468-008,8,Technology,grounded + constrained,"Use only supplied browser counts and conversion rates. Flag small groups and do not infer user demographics from browser choice.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Browser groups use source Browser codes.
+
+Browser code 1.0:
+- Session count: 2,462
+- Conversion rate: 0.148253
+
+Browser code 10.0:
+- Session count: 163
+- Conversion rate: 0.196319
+
+Browser code 11.0:
+- Session count: 6
+- Conversion rate: 0.166667
+
+Browser code 12.0:
+- Session count: 10
+- Conversion rate: 0.3
+
+Browser code 13.0:
+- Session count: 61
+- Conversion rate: 0.262295
+
+Browser code 2.0:
+- Session count: 7,961
+- Conversion rate: 0.153624
+
+Browser code 3.0:
+- Session count: 105
+- Conversion rate: 0.047619
+
+Browser code 4.0:
+- Session count: 736
+- Conversion rate: 0.17663
+
+Browser code 5.0:
+- Session count: 467
+- Conversion rate: 0.184154
+
+Browser code 6.0:
+- Session count: 174
+- Conversion rate: 0.114943
+
+Browser code 7.0:
+- Session count: 49
+- Conversion rate: 0.122449
+
+Browser code 8.0:
+- Session count: 135
+- Conversion rate: 0.155556
+
+Browser code 9.0:
+- Session count: 1
+- Conversion rate: 0.0","{""browser"": [{""group"": 1.0, ""sessions"": 2462, ""conversion_rate"": 0.148253}, {""group"": 10.0, ""sessions"": 163, ""conversion_rate"": 0.196319}, {""group"": 11.0, ""sessions"": 6, ""conversion_rate"": 0.166667}, {""group"": 12.0, ""sessions"": 10, ""conversion_rate"": 0.3}, {""group"": 13.0, ""sessions"": 61, ""conversion_rate"": 0.262295}, {""group"": 2.0, ""sessions"": 7961, ""conversion_rate"": 0.153624}, {""group"": 3.0, ""sessions"": 105, ""conversion_rate"": 0.047619}, {""group"": 4.0, ""sessions"": 736, ""conversion_rate"": 0.17663}, {""group"": 5.0, ""sessions"": 467, ""conversion_rate"": 0.184154}, {""group"": 6.0, ""sessions"": 174, ""conversion_rate"": 0.114943}, {""group"": 7.0, ""sessions"": 49, ""conversion_rate"": 0.122449}, {""group"": 8.0, ""sessions"": 135, ""conversion_rate"": 0.155556}, {""group"": 9.0, ""sessions"": 1, ""conversion_rate"": 0.0}]}",0.0,1,1,3,1,N/A,"Does not infer demographics, but supplies no useful analysis."
+PE-UCI468-009,9,Regional analysis,basic,"Analyze regional purchasing patterns.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","{""region"": [{""group"": 1.0, ""sessions"": 4780, ""conversion_rate"": 0.161297}, {""group"": 2.0, ""sessions"": 1136, ""conversion_rate"": 0.165493}, {""group"": 3.0, ""sessions"": 2403, ""conversion_rate"": 0.145235}, {""group"": 4.0, ""sessions"": 1182, ""conversion_rate"": 0.148054}, {""group"": 5.0, ""sessions"": 318, ""conversion_rate"": 0.163522}, {""group"": 6.0, ""sessions"": 805, ""conversion_rate"": 0.13913}, {""group"": 7.0, ""sessions"": 761, ""conversion_rate"": 0.156373}, {""group"": 8.0, ""sessions"": 434, ""conversion_rate"": 0.129032}, {""group"": 9.0, ""sessions"": 511, ""conversion_rate"": 0.168297}]}",Conversion rate: 0.168297,2,1,4,2,N/A,Returns 0.168297 without identifying Region 9.
+PE-UCI468-009,9,Regional analysis,specific,"Compare available Region categories by session count and conversion rate.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","{""region"": [{""group"": 1.0, ""sessions"": 4780, ""conversion_rate"": 0.161297}, {""group"": 2.0, ""sessions"": 1136, ""conversion_rate"": 0.165493}, {""group"": 3.0, ""sessions"": 2403, ""conversion_rate"": 0.145235}, {""group"": 4.0, ""sessions"": 1182, ""conversion_rate"": 0.148054}, {""group"": 5.0, ""sessions"": 318, ""conversion_rate"": 0.163522}, {""group"": 6.0, ""sessions"": 805, ""conversion_rate"": 0.13913}, {""group"": 7.0, ""sessions"": 761, ""conversion_rate"": 0.156373}, {""group"": 8.0, ""sessions"": 434, ""conversion_rate"": 0.129032}, {""group"": 9.0, ""sessions"": 511, ""conversion_rate"": 0.168297}]}",Conversion rate is 0.168297,2,1,4,2,N/A,No comparison across codes.
+PE-UCI468-009,9,Regional analysis,role + context,"Act as a market research analyst. Compare the coded Region groups and identify where further localized research may be justified.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","{""region"": [{""group"": 1.0, ""sessions"": 4780, ""conversion_rate"": 0.161297}, {""group"": 2.0, ""sessions"": 1136, ""conversion_rate"": 0.165493}, {""group"": 3.0, ""sessions"": 2403, ""conversion_rate"": 0.145235}, {""group"": 4.0, ""sessions"": 1182, ""conversion_rate"": 0.148054}, {""group"": 5.0, ""sessions"": 318, ""conversion_rate"": 0.163522}, {""group"": 6.0, ""sessions"": 805, ""conversion_rate"": 0.13913}, {""group"": 7.0, ""sessions"": 761, ""conversion_rate"": 0.156373}, {""group"": 8.0, ""sessions"": 434, ""conversion_rate"": 0.129032}, {""group"": 9.0, ""sessions"": 511, ""conversion_rate"": 0.168297}]}",Conversion rate: 0.168297,2,1,4,2,N/A,Does not identify where research is justified.
+PE-UCI468-009,9,Regional analysis,grounded + constrained,"Use only the supplied Region codes, session counts, and conversion rates. Do not convert region codes into geographic locations unless the dataset explicitly provides that mapping.
+
+Source facts:
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Region groups use Region codes; no geographic-name mapping is supplied.
+
+Region code 1.0:
+- Session count: 4,780
+- Conversion rate: 0.161297
+
+Region code 2.0:
+- Session count: 1,136
+- Conversion rate: 0.165493
+
+Region code 3.0:
+- Session count: 2,403
+- Conversion rate: 0.145235
+
+Region code 4.0:
+- Session count: 1,182
+- Conversion rate: 0.148054
+
+Region code 5.0:
+- Session count: 318
+- Conversion rate: 0.163522
+
+Region code 6.0:
+- Session count: 805
+- Conversion rate: 0.13913
+
+Region code 7.0:
+- Session count: 761
+- Conversion rate: 0.156373
+
+Region code 8.0:
+- Session count: 434
+- Conversion rate: 0.129032
+
+Region code 9.0:
+- Session count: 511
+- Conversion rate: 0.168297","{""region"": [{""group"": 1.0, ""sessions"": 4780, ""conversion_rate"": 0.161297}, {""group"": 2.0, ""sessions"": 1136, ""conversion_rate"": 0.165493}, {""group"": 3.0, ""sessions"": 2403, ""conversion_rate"": 0.145235}, {""group"": 4.0, ""sessions"": 1182, ""conversion_rate"": 0.148054}, {""group"": 5.0, ""sessions"": 318, ""conversion_rate"": 0.163522}, {""group"": 6.0, ""sessions"": 805, ""conversion_rate"": 0.13913}, {""group"": 7.0, ""sessions"": 761, ""conversion_rate"": 0.156373}, {""group"": 8.0, ""sessions"": 434, ""conversion_rate"": 0.129032}, {""group"": 9.0, ""sessions"": 511, ""conversion_rate"": 0.168297}]}",Conversion rate: 0.168297,2,1,4,2,N/A,Avoids geographic invention but remains incomplete.
+PE-UCI468-010,10,Purchase intention,basic,"Analyze page value and purchase intention.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""PageValues"": 27.264518}]}",Mean page value is 27.264518,2,1,4,2,N/A,Returns only 27.264518.
+PE-UCI468-010,10,Purchase intention,specific,"Compare average PageValues between purchasing and non-purchasing sessions.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""PageValues"": 27.264518}]}",Average page value: 27.264518,2,1,4,2,N/A,Omits non-purchase mean 1.975998.
+PE-UCI468-010,10,Purchase intention,role + context,"Act as an e-commerce analyst. Explain how PageValues differs by Revenue outcome and why it may be useful for conversion analysis.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""PageValues"": 27.264518}]}",PageValues differs by PageValues.,1,1,2,1,N/A,PageValues differs by PageValues does not express the supplied relationship.
+PE-UCI468-010,10,Purchase intention,grounded + constrained,"Use only the supplied PageValues statistics. Describe association rather than claiming PageValues causes a purchase.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+The values below are descriptive statistics.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean page value: 27.264518","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""PageValues"": 27.264518}]}",Mean page value: 27.264518,2,1,4,2,N/A,"No causal invention, but no analysis."
+PE-UCI468-011,11,Marketing strategy,basic,"Suggest ways to improve conversion.
+
+Source facts:
+Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""ProductRelated"": 28.714642}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""ProductRelated"": 48.210168}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}], ""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}","False: 1.0 | 2,451 | 0.106895 10.0 | 450 | 0.2 11.0 | 247 | 0.190283 12.0 | 1 | 0.0 13.0 | 738 | 0.058266 15.0 | 38 | 0.0 16.0 | 3 | 0.333333 17.0 | 1 | 0.0 18.0 | 10 | 0.0 19.0 | 17 | 0.058824 2.0 | 3,913 | 0.216458 20.0 | 198 | 0.252525 3.0 | 2,052 | 0.087719 0.0 | 444 | 0.119369 7.0 | 40 | 0.3 8.0 | 343 | 0.276968 9.0 | 42 | 0.095238",1,1,3,3,N/A,Omits several rows and changes traffic code 6 to 0.
+PE-UCI468-011,11,Marketing strategy,specific,"Based on observed engagement, visitor, timing, and traffic patterns, identify three areas that should be tested to improve conversion.
+
+Source facts:
+Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""ProductRelated"": 28.714642}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""ProductRelated"": 48.210168}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}], ""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}",False,1,1,3,1,1,Essentially a non-answer.
+PE-UCI468-011,11,Marketing strategy,role + context,"You are a market research analyst advising an e-commerce manager. Turn the supplied descriptive findings into three testable marketing or UX experiments.
+
+Source facts:
+Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""ProductRelated"": 28.714642}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""ProductRelated"": 48.210168}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}], ""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}","False: 1.0 | 2,451 | 0.106895 10.0 | 450 | 0.2 11.0 | 247 | 0.190283 12.0 | 1 | 0.0 13.0 | 738 | 0.058266 14.0 | 13 | 0.153846 15.0 | 38 | 0.0 16.0 | 3 | 0.333333 17.0 | 1 | 0.0 18.0 | 10 | 0.0 19.0 | 17 | 0.058824 2.0 | 3,913 | 0.216458 20.0 | 198 | 0.252525 3.0 | 2,052 | 0.087719 0.0 | 444 | 0.119369 7.0 | 40 | 0.3 8.0 | 343 | 0.276968 9.0 | 42 | 0.095238",1,1,3,3,1,Traffic repetition does not satisfy the strategy task.
+PE-UCI468-011,11,Marketing strategy,grounded + constrained,"Using only the supplied dataset findings, propose three experiments. Label each recommendation as a hypothesis to test, not a proven causal strategy.
+
+Source facts:
+Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","Purchasing=true; non-purchasing=false. Rates are fractions. Conversion is the fraction of sessions purchasing. Descriptive statistics. TrafficType codes have no verified channel-name mapping.
+
+Engagement: purchase | Sessions | Mean bounce rate | Mean exit rate | Mean product-related pages
+False | 10,422 | 0.025317 | 0.047378 | 28.714642
+True | 1,908 | 0.005117 | 0.019555 | 48.210168
+
+Visitor type | Sessions | Conversion rate
+New_Visitor | 1,694 | 0.249115
+Other | 85 | 0.188235
+Returning_Visitor | 10,551 | 0.139323
+
+Weekend | Sessions | Conversion rate
+False | 9,462 | 0.148911
+True | 2,868 | 0.173989
+
+Traffic code | Sessions | Conversion rate
+1.0 | 2,451 | 0.106895
+10.0 | 450 | 0.2
+11.0 | 247 | 0.190283
+12.0 | 1 | 0.0
+13.0 | 738 | 0.058266
+14.0 | 13 | 0.153846
+15.0 | 38 | 0.0
+16.0 | 3 | 0.333333
+17.0 | 1 | 0.0
+18.0 | 10 | 0.0
+19.0 | 17 | 0.058824
+2.0 | 3,913 | 0.216458
+20.0 | 198 | 0.252525
+3.0 | 2,052 | 0.087719
+4.0 | 1,069 | 0.15435
+5.0 | 260 | 0.215385
+6.0 | 444 | 0.119369
+7.0 | 40 | 0.3
+8.0 | 343 | 0.276968
+9.0 | 42 | 0.095238","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""ProductRelated"": 28.714642}, {""purchase"": true, ""sessions"": 1908, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""ProductRelated"": 48.210168}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""timing"": [{""group"": false, ""sessions"": 9462, ""conversion_rate"": 0.148911}, {""group"": true, ""sessions"": 2868, ""conversion_rate"": 0.173989}], ""traffic"": [{""group"": 1.0, ""sessions"": 2451, ""conversion_rate"": 0.106895}, {""group"": 10.0, ""sessions"": 450, ""conversion_rate"": 0.2}, {""group"": 11.0, ""sessions"": 247, ""conversion_rate"": 0.190283}, {""group"": 12.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 13.0, ""sessions"": 738, ""conversion_rate"": 0.058266}, {""group"": 14.0, ""sessions"": 13, ""conversion_rate"": 0.153846}, {""group"": 15.0, ""sessions"": 38, ""conversion_rate"": 0.0}, {""group"": 16.0, ""sessions"": 3, ""conversion_rate"": 0.333333}, {""group"": 17.0, ""sessions"": 1, ""conversion_rate"": 0.0}, {""group"": 18.0, ""sessions"": 10, ""conversion_rate"": 0.0}, {""group"": 19.0, ""sessions"": 17, ""conversion_rate"": 0.058824}, {""group"": 2.0, ""sessions"": 3913, ""conversion_rate"": 0.216458}, {""group"": 20.0, ""sessions"": 198, ""conversion_rate"": 0.252525}, {""group"": 3.0, ""sessions"": 2052, ""conversion_rate"": 0.087719}, {""group"": 4.0, ""sessions"": 1069, ""conversion_rate"": 0.15435}, {""group"": 5.0, ""sessions"": 260, ""conversion_rate"": 0.215385}, {""group"": 6.0, ""sessions"": 444, ""conversion_rate"": 0.119369}, {""group"": 7.0, ""sessions"": 40, ""conversion_rate"": 0.3}, {""group"": 8.0, ""sessions"": 343, ""conversion_rate"": 0.276968}, {""group"": 9.0, ""sessions"": 42, ""conversion_rate"": 0.095238}]}",False,1,1,3,1,1,"No causal claim, but no requested content."
+PE-UCI468-012,12,Competitive implications,basic,"Identify competitive insights from the dataset.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""available_columns"": [""Administrative"", ""Administrative_Duration"", ""BounceRates"", ""Browser"", ""ExitRates"", ""Informational"", ""Informational_Duration"", ""Month"", ""OperatingSystems"", ""PageValues"", ""ProductRelated"", ""ProductRelated_Duration"", ""Region"", ""Revenue"", ""SpecialDay"", ""TrafficType"", ""VisitorType"", ""Weekend""], ""competitor_performance_fields"": []}",Competitor performance fields: none,2,1,5,2,N/A,Correct limitation only.
+PE-UCI468-012,12,Competitive implications,specific,"Identify customer-experience capabilities an online retailer may need to strengthen based on the observed consumer behavior.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""available_columns"": [""Administrative"", ""Administrative_Duration"", ""BounceRates"", ""Browser"", ""ExitRates"", ""Informational"", ""Informational_Duration"", ""Month"", ""OperatingSystems"", ""PageValues"", ""ProductRelated"", ""ProductRelated_Duration"", ""Region"", ""Revenue"", ""SpecialDay"", ""TrafficType"", ""VisitorType"", ""Weekend""], ""competitor_performance_fields"": []}","Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, Product Related, Product Related_Duration, Region, Revenue, Special Day, Traffic Type, Visitor Type, Weekend Competitor performance fields: none",2,1,5,2,N/A,Column listing is not capability analysis.
+PE-UCI468-012,12,Competitive implications,role + context,"Act as a market intelligence analyst. Translate the observed shopping-behavior patterns into capabilities an e-commerce retailer should investigate to remain competitive.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""available_columns"": [""Administrative"", ""Administrative_Duration"", ""BounceRates"", ""Browser"", ""ExitRates"", ""Informational"", ""Informational_Duration"", ""Month"", ""OperatingSystems"", ""PageValues"", ""ProductRelated"", ""ProductRelated_Duration"", ""Region"", ""Revenue"", ""SpecialDay"", ""TrafficType"", ""VisitorType"", ""Weekend""], ""competitor_performance_fields"": []}","Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, Special Day, Traffic Type, Visitor Type, Weekend Competitor performance fields: none",2,1,5,2,N/A,Does not translate behavior into business capabilities.
+PE-UCI468-012,12,Competitive implications,grounded + constrained,"Using only the supplied consumer-behavior findings, identify competitive implications. Do not rank or name competitors because the dataset contains no competitor-company performance data.
+
+Source facts:
+Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","Revenue/purchase true means a purchasing session.
+Revenue/purchase false means a non-purchasing session.
+Rates are fractions, not percentages.
+Conversion rate is the fraction of sessions ending in a purchase.
+The values below are descriptive statistics.
+Duration units are not specified in the available dataset information.
+
+Non-purchasing sessions:
+- Session count: 10,422
+- Mean product-related page count: 28.714642
+- Mean product-related duration: 1069.987809
+- Mean bounce rate: 0.025317
+- Mean exit rate: 0.047378
+- Mean page value: 1.975998
+
+Purchasing sessions:
+- Session count: 1,908
+- Mean product-related page count: 48.210168
+- Mean product-related duration: 1876.209615
+- Mean bounce rate: 0.005117
+- Mean exit rate: 0.019555
+- Mean page value: 27.264518
+
+Visitor type New_Visitor:
+- Session count: 1,694
+- Conversion rate: 0.249115
+
+Visitor type Other:
+- Session count: 85
+- Conversion rate: 0.188235
+
+Visitor type Returning_Visitor:
+- Session count: 10,551
+- Conversion rate: 0.139323
+
+Available source columns:
+Administrative, Administrative_Duration, BounceRates, Browser, ExitRates, Informational, Informational_Duration, Month, OperatingSystems, PageValues, ProductRelated, ProductRelated_Duration, Region, Revenue, SpecialDay, TrafficType, VisitorType, Weekend
+
+Competitor performance fields: none.","{""engagement"": [{""purchase"": false, ""sessions"": 10422, ""ProductRelated"": 28.714642, ""ProductRelated_Duration"": 1069.987809, ""BounceRates"": 0.025317, ""ExitRates"": 0.047378, ""PageValues"": 1.975998}, {""purchase"": true, ""sessions"": 1908, ""ProductRelated"": 48.210168, ""ProductRelated_Duration"": 1876.209615, ""BounceRates"": 0.005117, ""ExitRates"": 0.019555, ""PageValues"": 27.264518}], ""visitor"": [{""group"": ""New_Visitor"", ""sessions"": 1694, ""conversion_rate"": 0.249115}, {""group"": ""Other"", ""sessions"": 85, ""conversion_rate"": 0.188235}, {""group"": ""Returning_Visitor"", ""sessions"": 10551, ""conversion_rate"": 0.139323}], ""available_columns"": [""Administrative"", ""Administrative_Duration"", ""BounceRates"", ""Browser"", ""ExitRates"", ""Informational"", ""Informational_Duration"", ""Month"", ""OperatingSystems"", ""PageValues"", ""ProductRelated"", ""ProductRelated_Duration"", ""Region"", ""Revenue"", ""SpecialDay"", ""TrafficType"", ""VisitorType"", ""Weekend""], ""competitor_performance_fields"": []}",Competitor performance fields: none,2,1,5,2,N/A,Obeys the competitor restriction but omits the positive task.

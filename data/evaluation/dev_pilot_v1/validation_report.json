@@ -1,0 +1,40 @@
+{
+  "calculation_checks_passed": true,
+  "calculation_count": 9,
+  "case_count": 16,
+  "cases_sha256": "594ac852265dd851ed8da4a482e79358eb2c8c1610ddc78a7cdd6c444588cbe9",
+  "duplicate_checks": {
+    "exact_duplicates": [],
+    "intentional_paraphrases": [
+      {
+        "case_ids": [
+          "pilot-recommendation-01",
+          "pilot-recommendation-02"
+        ],
+        "scenario_id": "pilot-layout-test"
+      }
+    ],
+    "near_duplicates": [],
+    "threshold": 0.9
+  },
+  "family_counts": {
+    "association_causation": 2,
+    "bias_fairness": 2,
+    "boolean_groups": 2,
+    "conversion": 2,
+    "percentage_points": 2,
+    "recommendations": 2,
+    "region_traffic": 2,
+    "sample_thresholds": 2
+  },
+  "provenance_counts": {
+    "synthetic": 16
+  },
+  "scenario_count": 15,
+  "semantic_review_status": "criteria authored; no response judgments or model inference performed",
+  "source_group_checks_passed": true,
+  "source_manifest_sha256": "de162666dd03487c31aea0a22821c7944c48a43fd1b3abbabd9baac71167207b",
+  "status": "passed",
+  "test_content_screening": "not performed; held-out content is not accessed",
+  "training_reference_count": 18
+}

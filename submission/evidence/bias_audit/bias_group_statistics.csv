@@ -1,0 +1,67 @@
+source_split,dimension,group,sessions,conversion_rate_percent_reported,source_record_ids,small_sample_flag
+train,Browser,1.0,1978,14.7,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",False
+train,Browser,10.0,127,17.3,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",False
+train,Browser,11.0,6,16.7,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",True
+train,Browser,12.0,9,22.2,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",True
+train,Browser,13.0,42,26.2,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",True
+train,Browser,2.0,6374,15.4,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",False
+train,Browser,3.0,83,4.8,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",True
+train,Browser,4.0,585,18.3,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",False
+train,Browser,5.0,372,18.0,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",False
+train,Browser,6.0,134,11.9,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",False
+train,Browser,7.0,41,12.2,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",True
+train,Browser,8.0,112,17.0,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",False
+train,Browser,9.0,1,0.0,"[""FT-UCI468-v1-train-browser-extrema-30ab30d93e6952aa""]",True
+train,OperatingSystems,1.0,2086,14.6,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",False
+train,OperatingSystems,2.0,5267,17.6,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",False
+train,OperatingSystems,3.0,2044,10.2,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",False
+train,OperatingSystems,4.0,387,18.3,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",False
+train,OperatingSystems,5.0,6,16.7,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",True
+train,OperatingSystems,6.0,17,11.8,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",True
+train,OperatingSystems,7.0,5,20.0,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",True
+train,OperatingSystems,8.0,52,23.1,"[""FT-UCI468-v1-train-os-extrema-30ab30d93e6952aa""]",True
+train,Region,1.0,3844,16.1,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,2.0,889,16.8,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,3.0,1942,14.4,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,4.0,919,14.8,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,5.0,254,16.9,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,6.0,632,14.1,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,7.0,630,16.0,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,8.0,357,12.3,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,Region,9.0,397,16.6,"[""FT-UCI468-v1-train-region-limits-30ab30d93e6952aa""]",False
+train,TrafficType,1.0,2006,10.7,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,10.0,359,18.9,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,11.0,209,19.6,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,12.0,1,0.0,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,13.0,584,6.2,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,14.0,11,18.2,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,15.0,31,0.0,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,16.0,3,33.3,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,17.0,1,0.0,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,18.0,9,0.0,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,19.0,13,7.7,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,2.0,3086,22.1,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,20.0,158,25.9,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,3.0,1631,9.3,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,4.0,849,14.1,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,5.0,221,20.8,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,6.0,357,11.5,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,7.0,30,26.7,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,TrafficType,8.0,269,27.1,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",False
+train,TrafficType,9.0,36,2.8,"[""FT-UCI468-v1-train-traffic-extrema-30ab30d93e6952aa"", ""FT-UCI468-v1-train-traffic-limits-30ab30d93e6952aa""]",True
+train,VisitorType,New_Visitor,1379,25.3,"[""FT-UCI468-v1-train-follow-up-30ab30d93e6952aa"", ""FT-UCI468-v1-train-marketing-hypotheses-30ab30d93e6952aa"", ""FT-UCI468-v1-train-small-groups-30ab30d93e6952aa""]",False
+train,VisitorType,Other,62,19.4,"[""FT-UCI468-v1-train-follow-up-30ab30d93e6952aa"", ""FT-UCI468-v1-train-marketing-hypotheses-30ab30d93e6952aa"", ""FT-UCI468-v1-train-small-groups-30ab30d93e6952aa""]",True
+train,VisitorType,Returning_Visitor,8423,13.8,"[""FT-UCI468-v1-train-follow-up-30ab30d93e6952aa"", ""FT-UCI468-v1-train-marketing-hypotheses-30ab30d93e6952aa"", ""FT-UCI468-v1-train-small-groups-30ab30d93e6952aa""]",False
+validation,Month,Aug,51,15.7,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",True
+validation,Month,Dec,174,15.5,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",False
+validation,Month,Feb,17,5.9,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",True
+validation,Month,Jul,34,23.5,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",True
+validation,Month,June,33,6.1,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",True
+validation,Month,Mar,213,10.3,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",False
+validation,Month,May,331,11.2,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",False
+validation,Month,Nov,297,23.9,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",False
+validation,Month,Oct,55,18.2,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",True
+validation,Month,Sep,28,17.9,"[""FT-UCI468-v1-validation-monthly-extrema-27fdb63db3c361a1""]",True
+validation,VisitorType,New_Visitor,150,23.3,"[""FT-UCI468-v1-validation-visitor-comparison-27fdb63db3c361a1""]",False
+validation,VisitorType,Other,10,20.0,"[""FT-UCI468-v1-validation-visitor-comparison-27fdb63db3c361a1""]",True
+validation,VisitorType,Returning_Visitor,1073,14.4,"[""FT-UCI468-v1-validation-visitor-comparison-27fdb63db3c361a1""]",False

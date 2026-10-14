@@ -1,0 +1,26 @@
+[
+  {
+    "phase": "model/fine_tuned",
+    "logger": "transformers.modeling_utils",
+    "level": "WARNING",
+    "message": "The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning."
+  },
+  {
+    "phase": "model/original",
+    "logger": "transformers.modeling_utils",
+    "level": "WARNING",
+    "message": "The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning."
+  },
+  {
+    "phase": "generation/fine_tuned",
+    "logger": "transformers.generation.utils",
+    "level": "WARNING",
+    "message": "Both `max_new_tokens` (=180) and `max_length`(=181) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)"
+  },
+  {
+    "phase": "generation/original",
+    "logger": "transformers.generation.utils",
+    "level": "WARNING",
+    "message": "Both `max_new_tokens` (=180) and `max_length`(=181) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)"
+  }
+]
